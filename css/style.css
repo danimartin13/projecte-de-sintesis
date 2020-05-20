@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+h1, h2, h3, h4, h5{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+
+.img__logo{
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+}
+
+.contenedor{
+    margin: auto;
+    width: 98%;
+}
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(../img/kaisa-ezreal-lol-season-2020-uhdpaper.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+*{
+    box-sizing: border-box;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+.header{
+    height: 60px;
+}
+.header .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+.logo, .icon-menu-1{
+    margin: 5px;
+    color: #EAF2E3;
+}
+.icon-menu-1{
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: yellow;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+}
+.nav{
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    transition: all 0.4s;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu__link{
+    display: block;
+    padding: 15px;
+    background: black;
+    text-decoration: none;
+    color: yellow;
+}
+.menu__link:hover, .select{
+    background: yellow;
+    color: black;
+}
+.mostrar{
+    left: 0;
+}
+
+/*Banner*/
+.banner{
+    margin-top: -60px;
+    position: relative;
+    z-index: -1000;
+    margin-bottom: 20px;
+}
+
+.banner .contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: #EAF2E3;
+    text-align: center;
+}
+
+.banner__txt{
+    display: none;
+}
+
+/*cuerpo*/
+.info__columna {
+    background: black;
+    color: yellow;
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+
+/*comentaristas*/
+.cursos__columna {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .cursos__descripcion {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: yellow;
+    background: rgba(0, 0, 0, 0.651);
+    width: 50%;
+    height: 100%;
+    padding: 5px;
+  }
+  .cursos__titulo {
+    font-size: 25px;
+    margin: 5px 0;
+  }
+  .cursos__img {
+    width: 70%;
+  }
+  /*footer*/
+  .footer {
+    height: 100px;
+    width: 100%;
+    background: black;
+    color: #EAF2E3;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .footer .social [class^="icon-"] {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px 0;
+    background: #EAF2E3;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 20px;
+  
+  }
+  .footer .social [class^="icon-"]:hover{
+      color: white;
+      background: black;
+  }
+  .sed:hover{
+    color: yellow;
+    cursor: pointer;
+  }
+
+  /*responsive*/
+  @media(max-width:480px){
+    .banner__titulo{
+      display: none;
+    }
+  }
+  @media(min-width:480px) {
+    .contentw{
+      min-height: calc(100vh - 246px -130px);
+    }
+    .logo {
+      font-size: 40px;
+    }
+    .img__logo{
+      width: 30px;
+      height: 30px;
+    }
+
+    .banner__titulo {
+      font-size: 30px;
+      margin: 5px 0;
+    }
+    .banner__txt {
+      display: block;
+      font-size: 18px;
+      margin: 7px 0;
+    }
+    .info, .cursos {
+      display: flex;
+      justify-content: space-between;
+      margin-top: -90px;
+    }
+    .info__columna {
+      width: 32%;
+    }
+    .info__titulo {
+      font-size: 30px;
+      margin: 5px 0;
+    }
+    .section__titulo {
+      color: yellow;
+      width: 100%;
+    }
+    .cursos {
+      flex-wrap: wrap;
+      margin-top: 0;
+    }
+    .cursos__columna {
+      width: 49%;
+    }
+    .footer .social [class^="icon-"] {
+      margin: 0 10px;
+    }
+  }
+  @media(min-width:768px) {  
+    .img__logo{
+      width: 100px;
+      height: 100px;
+    }
+    .banner__titulo {
+      font-size: 50px;
+    }
+    .cursos__titulo {
+      font-size: 40px;
+    }
+    .contentw{
+      min-height: calc(100vh - 246px -130px);
+    }
+  }
+  
+  @media(min-width:1024px) { 
+    .contentw{
+      min-height: calc(100vh - 246px -130px);
+    }
+    .img__logo{
+      width: 150px;
+      height: 150px;
+    } 
+    .contenedor {
+      width: 1000px;
+    }
+    .section__titulo {
+      font-size: 50px;
+      margin: 30px 0;
+    }
+    .nav {
+      position: static;
+      width: auto;
+    }
+    .menu {
+      display: flex;
+    }
+    .icon-menu-1 {
+      display: none;
+    }
+    .menu__link {
+      background: none;
+      font-size: 20px;
+    }
+    .select {
+      color: yellow;
+      background: black;
+    }
+    .banner__titulo {
+      font-size: 60px;
+    }
+    .banner__txt {
+      font-size: 25px;
+    }
+    .info {
+      margin-top: -10px;
+    }
+    .info__columna {
+      padding: 30px;
+    }
+    .info__titulo {
+      font-size: 40px;
+      text-align: center;
+    }
+    .cursos__descripcion {
+      padding: 20px;
+    }
+    .cursos__titulo {
+      font-size: 50px;
+    }
+    .cursos__txt {
+      font-size: 20px;
+    }
+  }
+  
+  @media(min-width:1280px) {
+    .contenedor {
+      width: 1200px;
+    }
+    .logo {
+      font-size: 60px;
+    }
+    .banner .contenedor {
+      top: 40%;
+    }
+    .info {
+      margin-top: -220px;
+    }
+  }
+  /*login*/
+.log{
+  background-color: yellow;
+}
+.ratata{
+  margin-bottom: 100px;
+  width: 400px;
+  background: yellow;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+}
+.controls{
+  width: 100%;
+  background: #EAF2E3;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+}
+
+
+.ratata{
+  min-height: calc(100vh - 246px - 130px);
+}
+.contentw{
+  min-height: calc(100vh - 246px -130px);
+}
+.info__titulo1 a{
+  color: rgb(63, 167, 23);
+  text-decoration: none;
+}
+.info__titulo2 a{
+  color: rgb(47, 137, 255);
+  text-decoration: none;
+}
+.info__titulo3 a{
+  color: rgb(161, 25, 25);
+  text-decoration: none;
+}
+.info__txt1{
+  color: rgb(63, 167, 23);
+}
+.info__txt2{
+  color: rgb(47, 137, 255);
+}
+.info__txt3{
+  color: rgb(161, 25, 25);
+}
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+
+.box{
+   width: 320px;
+   margin: 100px auto;
+   background: #fff;
+   border-radius: 7px;
+   box-shadow: 1px 2px 4px rgba(0,0,0,.3);
+}
+
+.box .heading{
+   background: yellow;
+   border-radius: 7px 7px 0px 0px;
+   padding: 10px;
+   color: black;
+   text-align: center;
+   font-family: "Rubik";
+}
+
+.faqs{
+   padding: 0px 20px 20px;
+}
+
+::-webkit-details-marker{
+   float: right;
+   margin-top: 3px;
+}
+
+details{
+   background: #f6f6f6;
+   padding: 10px 20px;
+   border-radius: 7px;
+   margin-top: 20px;
+   font-family: "Rubik";
+   font-size: 14px;
+   letter-spacing: 1px;
+   cursor: pointer;
+}
+
+details summary{
+   outline: none;
+}
+.contentttt{
+  min-height: calc(100vh -150px -300px);
+}
+h6{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  color: #EAF2E3;
+  margin: 20px;
+  margin-bottom: 100vh;
+  text-align: center;
+}
+.df{
+  text-align: center;
+  background-color: yellow;
+  width: 200px;
+  margin: auto;
+  padding: 5px;
+  border-radius: 5px;
+
+}
+.colocar{
+padding-top: 200px;
+  margin-bottom: 50vh;
+}
+
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+  display: none;
+}

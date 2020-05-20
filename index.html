@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/cookies.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167184384-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-167184384-1');
+</script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <img src="img/mamut sin fondo.png" class="img__logo" alt="">
+            <h1 class="logo">Mamut Cup</h1>
+            <span class="icon-menu-1" id="btn-menu"></span>
+            <nav class="nav" id="nav">
+                <ul class="menu">
+                    <li class="menu__item"><a class="menu__link select" href="">Inici</a></li>
+                    <li class="menu__item"><a class="menu__link" href="proces.html">Competicions</a></li>
+                    <li class="menu__item"><a class="menu__link" href="contacto.html">Contacte</a></li>
+                    <li class="menu__item"><a class="menu__link" href="entrades.html">Entrades</a></li>
+                    <li class="menu__item"><a class="menu__link" href="faqs.html">FAQs</a></li>
+                    <li class="menu__item"><a class="menu__link" href="intranet/login.html">Intranet</a></li>
+                    <li class="menu__item"><a class="menu__link" href="zindex.html">English</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="sincla">
+    <div class="banner">
+        <img src="img/banner.jpg" alt="" class="banner__img">
+        <div class="contenedor">
+            <h2 class="banner__titulo">League of Legends Badalona</h2>
+            <p class="banner__txt">La competició més important de League of Legends es disputarà a Badalona</p>
+        </div>
+    </div>
+    <!--//BLOQUE COOKIES-->
+<div id="barraaceptacion" style="display: block;">
+  <div class="inner">
+      Solicitamos su permiso para obtener datos estadísticos de su navegación en esta web, en cumplimiento del Real 
+      Decreto-ley 13/2012. Si continúa navegando consideramos que acepta el uso de cookies.
+      <a href="javascript:void(0);" class="ok" onclick="PonerCookie();"><b>OK</b></a> | 
+      <a href="http://politicadecookies.com" target="_blank" class="infoppp">Más información</a>
+  </div>
+</div>
+
+<script>
+function getCookie(c_name){
+  var c_value = document.cookie;
+  var c_start = c_value.indexOf(" " + c_name + "=");
+  if (c_start == -1){
+      c_start = c_value.indexOf(c_name + "=");
+  }
+  if (c_start == -1){
+      c_value = null;
+  }else{
+      c_start = c_value.indexOf("=", c_start) + 1;
+      var c_end = c_value.indexOf(";", c_start);
+      if (c_end == -1){
+          c_end = c_value.length;
+      }
+      c_value = unescape(c_value.substring(c_start,c_end));
+  }
+  return c_value;
+}
+
+function setCookie(c_name,value,exdays){
+  var exdate=new Date();
+  exdate.setDate(exdate.getDate() + exdays);
+  var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+  document.cookie=c_name + "=" + c_value;
+}
+
+if(getCookie('tiendaaviso')!="1"){
+  document.getElementById("barraaceptacion").style.display="block";
+}
+function PonerCookie(){
+  setCookie('tiendaaviso','1',365);
+  document.getElementById("barraaceptacion").style.display="none";
+}
+</script>
+<!--//FIN BLOQUE COOKIES-->
+    <main class="main">
+        <div class="contenedor">
+          <section class="info">
+              <article class="info__columna">
+                  <img src="img/ff8080816939aac301694804bc7a0190-large.png" alt="" class="info__img">
+                  <h2 class="info__titulo">G2 el favorit per al torneig</h2>
+                  <p class="info__txt">L'equip Alemany part com a favorit per a emportar-se el torneig a les terres bavaràs</p>
+              </article>
+              <article class="info__columna">
+                  <img src="img/manolo-lama.jpg" alt="" class="info__img">
+                  <h2 class="info__titulo">Manolo Lama convidat especial</h2>
+                  <p class="info__txt">El famosos comentarista esportiu sàrria el convidat de luxe de l'esdeveniment a Badalona</p>
+              </article>
+              <article class="info__columna">
+                  <img src="img/unnamed (1).jpg" alt="" class="info__img">
+                  <h2 class="info__titulo">El Zorrilla àmplia la seva capacitat</h2>
+                  <p class="info__txt">El teatre Zorilla de Badalona ampliés la seva capacitat d'espectadors per a la mamut cup, es col·loquessin graderies supletòries</p>
+              </article>
+          </section> 
+          <section class="cursos">
+            <h2 class="section__titulo">Comentaristes</h2>
+            <div class="cursos__columna">
+              <img src="img/1366_2000.jpeg" alt="" class="cursos__img">
+              <div class="cursos__descripcion">
+                <h2 class="cursos__titulo">Ibai</h2>
+                <div class="cursos__txt">Ibai sàrria la pedra angular dels comentaris de la Mamut Cup</div>
+              </div>
+            </div>
+            <div class="cursos__columna">
+              <img src="img/unnamed.jpg" alt="" class="cursos__img">
+              <div class="cursos__descripcion">
+                <h2 class="cursos__titulo">Ander</h2>
+                <div class="cursos__txt">El comentarista espanyol farà la dupla amb Ibai</div>
+              </div>
+            </div>
+            <div class="cursos__columna">
+              <img src="img/J3KsF7gy.jpeg" alt="" class="cursos__img">
+              <div class="cursos__descripcion">
+                <h2 class="cursos__titulo">Jazz</h2>
+                <div class="cursos__txt">El comentarista anglès farà l'anàlisi de les partides una vegada finalitzades</div>
+              </div>
+            </div>
+            <div class="cursos__columna">
+              <img src="img/manolito.jpeg" alt="" class="cursos__img">
+              <div class="cursos__descripcion">
+                <h2 class="cursos__titulo">Manolo Lama</h2>
+                <div class="cursos__txt">Serà l'encarregat de fer les entrevistes postpartit</div>
+              </div>
+            </div>
+          </section>
+        </div>
+    </main>
+  </div>
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.facebook.com/Mamut-Cup-104134884631719/" class="icon-facebook"></a>
+            <a href="https://www.youtube.com/channel/UCfzBm3c1TfxPBZqpD-VCSyg/" class="icon-youtube-play"></a>
+            <a href="https://twitter.com/mamutcup" class="icon-twitter"></a>
+            <a href="https://www.instagram.com/mamutcup/" class="icon-instagram"></a>
+            <a href="https://www.twitch.tv/mamutcup" class="icon-twitch"></a>
+        </div>
+        <p class="copy"><span class="sed">&copy; Mamut Cup 2020</span> &nbsp; - &nbsp; Tots els drets reservats</p>
+    </footer>
+    <script src="js/menu.js"></script>
+</body>
+</html>
